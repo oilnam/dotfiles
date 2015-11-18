@@ -46,11 +46,11 @@
 ;;(toggle-frame-fullscreen) 
 ;; Who use the bar to scroll?
 
-(scroll-bar-mode 0)
-
-(tool-bar-mode 0)
-(menu-bar-mode 0)
-
+(if (display-graphic-p)
+    (progn
+      (tool-bar-mode -1)
+      (menu-bar-mode 0)
+      (scroll-bar-mode -1)))
 
 (set-face-attribute 'default nil
 		    :family "Menlo" :height 130 :weight 'normal)
