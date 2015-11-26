@@ -6,3 +6,4 @@ export GREP_OPTIONS='--color=auto'
 alias ls='ls -GFh'
 alias grep="grep --color=auto"
 alias less='less -r'
+alias gs='git status'
