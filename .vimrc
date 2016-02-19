@@ -1,0 +1,28 @@
+syntax on
+
+set tabstop=4	" a tab is four spaces
+
+" show line and column number
+set ruler
+
+" Always show status bar
+set laststatus=2
+
+set ignorecase    " ignore case when searching
+set smartcase     " ignore case if search pattern is all lowercase, case-sensitive otherwise
+
+set hlsearch      " highlight search terms
+set incsearch     " show search matches as you type
+
+" Move between windows without having to press Ctrl-W
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Sane beg/end of line
+map <C-a> ^
+map <C-e> $
+
+" Json syntax on
+autocmd BufNewFile,BufRead *.json set ft=javascript 
