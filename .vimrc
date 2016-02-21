@@ -26,3 +26,7 @@ map <C-e> $
 
 " Json syntax on
 autocmd BufNewFile,BufRead *.json set ft=javascript 
+
+" Show nested folder tree in explorer mode (:E)
+let g:netrw_liststyle=3
+
