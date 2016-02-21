@@ -30,3 +30,8 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 " Show nested folder tree in explorer mode (:E)
 let g:netrw_liststyle=3
 
+" solarized options - background can be dark/light
+set background=dark
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+colorscheme solarized
