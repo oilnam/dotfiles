@@ -1,6 +1,6 @@
 syntax on
 
-set tabstop=4	" a tab is four spaces
+set tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
 " show line and column number
 set ruler
