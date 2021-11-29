@@ -7,3 +7,6 @@ alias ls='ls -GFh'
 alias grep="grep --color=auto"
 alias less='less -r'
 alias gs='git status'
+alias lastcommittonow='GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"'
+alias fm='gofmt -s -w .'
+
